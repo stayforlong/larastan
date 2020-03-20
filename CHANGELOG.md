@@ -6,8 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.5.3] 2020-03-22
+
 ### Added
-- Support for eloquent resources. Thanks @mr-feek ([#470](https://github.com/nunomaduro/larastan/pull/470))
+- Support for Eloquent resources. Thanks @mr-feek ([#470](https://github.com/nunomaduro/larastan/pull/470))
+- Treat Laravel ide-helper generated relationship properties as generic Collections. Thanks @mr-feek ([#479] (https://github.com/nunomaduro/larastan/pull/479))
+- `id` property on any model class will be recognized as integer type. ([#499](https://github.com/nunomaduro/larastan/pull/499))
+
+### Fixed
+- Corrected parameter type of builder dynamic wheres. Thanks @mr-feek ([#482](https://github.com/nunomaduro/larastan/pull/482))
+- Added a check to see if migrations directory exists. Thanks @deleugpn ([#498](https://github.com/nunomaduro/larastan/pull/498))
+- Added `Carbon/Carbon` to possible types for a date properties in models. Thanks @arxeiss ([#500](https://github.com/nunomaduro/larastan/pull/500))
 
 ## [0.5.2] - 2020-02-10
 
